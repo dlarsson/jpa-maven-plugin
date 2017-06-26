@@ -61,6 +61,42 @@
     <url>https://github.com/ljnelson/${project.artifactId}/issues</url>
   </issueManagement>
 
+   <repositories>
+      <repository>
+         <id>fjordnetwork</id>
+         <name>Fjord Internal</name>
+         <url>http://builder.internal:8081/nexus/content/repositories/fjordnetwork</url>
+      </repository>
+      <repository>
+         <id>fjord-snapshots</id>
+         <name>Fjord Internal Snapshots</name>
+         <url>http://builder.internal:8081/nexus/content/repositories/fjord-snapshots</url>
+         <releases>
+            <enabled>false</enabled>
+         </releases>
+      </repository>
+      <repository>
+         <id>central</id>
+         <name>Proxy for http://repo1.maven.org/maven2</name>
+         <url>http://builder.internal:8081/nexus/content/repositories/central</url>
+      </repository>
+      <repository>
+         <id>javanet</id>
+         <name>Proxy for http://download.java.net/maven/2</name>
+         <url>http://nexus.internal:8081/nexus/content/repositories/javanet</url>
+      </repository>
+      <repository>
+         <id>jboss</id>
+         <name>Proxy for http://repository.jboss.org/maven2</name>
+         <url>http://nexus.internal:8081/nexus/content/repositories/jboss</url>
+      </repository>
+      <repository>
+         <id>codehaus</id>
+         <name>Proxy for http://repository.codehaus.org/</name>
+         <url>http://nexus.internal:8081/nexus/content/repositories/codehaus</url>
+      </repository>
+   </repositories>
+
   <dependencyManagement>
     <dependencies>
 
